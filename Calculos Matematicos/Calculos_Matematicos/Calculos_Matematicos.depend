@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1502235710 source:c:\users\udesc.cctcc\desktop\exercicios\git\linguagem-c\calculos matematicos\calculos_matematicos\main.c
-	<stdio.h>
-	<stdlib.h>
-	<math.h>
-
