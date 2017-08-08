@@ -29,5 +29,4 @@ void main() {
        printf("%d ", vet[qtdCont]);
     }
 
-
 }
