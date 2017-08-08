@@ -25,8 +25,6 @@ void main() {
         }
     }
 
-    //printf("%d", sizeof(vet));
-
     for(qtdCont = 0; qtdCont < qtdNum; qtdCont++) {
        printf("%d ", vet[qtdCont]);
     }
