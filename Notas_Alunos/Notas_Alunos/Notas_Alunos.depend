@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1502326011 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\notas_alunos\notas_alunos\main.c
+	<stdio.h>
+	<stdlib.h>
+
