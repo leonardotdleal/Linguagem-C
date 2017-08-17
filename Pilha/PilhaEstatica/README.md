@@ -8,8 +8,8 @@
 *** 20.8
 *** 20.3
 *** 44.5
-*** 33.33
-*** 20.9
+-- 33.33
+- 20.9
 * Exiba o conteúdo da pilha
 * Remova os dois últimos elementos da pilha
 * Exiba o conteúdo da pilha
