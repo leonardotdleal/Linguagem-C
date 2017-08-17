@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1502931628 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\pilha\pilhaestatica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1502931030 c:\users\udesc.cctcc\desktop\git\linguagem-c\pilha\pilhaestatica\pilha.h
+	"boolean.h"
+
+1502928401 c:\users\udesc.cctcc\desktop\git\linguagem-c\pilha\pilhaestatica\boolean.h
+
+1502931656 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\pilha\pilhaestatica\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+

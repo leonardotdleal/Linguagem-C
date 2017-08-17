@@ -1,12 +1,14 @@
 #define MAX 10
+#include "boolean.h"
 
-struct pilha {
-   float values[MAX];
-   int top;
+typedef struct pilha {
+   float valores[MAX];
+   int topo;
 } Pilha;
 
-Pilha criaPilha();
-void empilha(Pilha *p, float value);
+Pilha *criaPilha();
+void empilha(Pilha *p, float valor);
 float desempilha(Pilha *p);
-void estaCheia();
-void estaVazia();
+bool estaCheia(Pilha *p);
+bool estaVazia(Pilha *p);
+void imprimePilha(Pilha *pilha);
