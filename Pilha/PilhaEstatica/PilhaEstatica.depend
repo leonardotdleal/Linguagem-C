@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1502931628 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\pilha\pilhaestatica\main.c
+1502931927 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\pilha\pilhaestatica\main.c
 	<stdio.h>
 	<stdlib.h>
 	"pilha.h"

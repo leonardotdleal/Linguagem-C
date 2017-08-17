@@ -58,4 +58,6 @@ void imprimePilha(Pilha *pilha) {
         x = desempilha(pilhaAux);
         empilha(pilha, x);
     }
+
+    free(pilhaAux);
 }

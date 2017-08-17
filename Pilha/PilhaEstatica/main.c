@@ -5,7 +5,6 @@
 void main() {
 
     Pilha *pilha = criaPilha();
-    float valor = 0;
 
     empilha(pilha, 20.0);
     empilha(pilha, 20.8);
@@ -14,7 +13,12 @@ void main() {
     empilha(pilha, 33.33);
     empilha(pilha, 20.9);
 
-    valor = desempilha(pilha);
+    imprimePilha(pilha);
+
+    printf("\n\n");
+
+    desempilha(pilha);
+    desempilha(pilha);
 
     imprimePilha(pilha);
 
