@@ -7,5 +7,6 @@
 * Baixar repositório: git clone https://github.com/leonardotdleal/Linguagem-C.git
 * Configurando username: git config --global user.name "Leonardo"
 * Configurando email: git config --global user.email email@example.com
-
+* Adicionando os arquivos alterados: git add -A
+* Comitando os arquivos alterados e adicionados: git commit -m "message"
 
