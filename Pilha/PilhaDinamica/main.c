@@ -22,6 +22,6 @@ void main() {
 
     imprimePilha(pilha);
 
-    free(pilha);
+    liberaPilha(pilha);
 
 }
