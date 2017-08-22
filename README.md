@@ -2,6 +2,11 @@
 
 Programas desenvolvidos na linguagem C para estudos e exercícios nas disciplinas Algoritmos, Linguagem de Programação e Estrutura de Dados no curso de Tecnologia em Análise e Desenvolvimento de Sistemas na Universidade do Estado de Santa Catarina (UDESC).
 
+IDE utilizada para desenvolvimento: [CodeBlocks](http://www.codeblocks.org/)
+
+Autor: Leonardo Tadeu Diniz Leal
+
+
 ### Comandos git para uso em sala ###
 
 Baixar repositório: 
@@ -29,6 +34,3 @@ Empurrando o commit para a branch master:
 
 	git push origin master
 
-IDE utilizada para desenvolvimento: [CodeBlocks](http://www.codeblocks.org/)
-
-Autor: Leonardo Tadeu Diniz Leal
