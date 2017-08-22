@@ -5,16 +5,27 @@
 ## Comandos git para uso em sala ##
 
 * Baixar repositório: 
+
 	git clone https://github.com/leonardotdleal/Linguagem-C.git
+	
 * Configurando username: 
+
 	git config --global user.name "Leonardo"
+	
 * Configurando email: 
+
 	git config --global user.email email@example.com
+	
 * Gravando alterações de todos os arquivos modificados: 
+
 	git add -A
+	
 * Armazena os arquivos alterados em um commit: 
+
 	git commit -m "message"
+	
 * Empurrando o commit para a branch master: 
+
 	git push origin master
 
-** IDE utilizada para desenvolvimento: CodeBlocks
+* IDE utilizada para desenvolvimento: CodeBlocks
