@@ -10,4 +10,5 @@
 * Libere a memória ocupada pela pilha
 
 Autor: Leonardo Tadeu Diniz Leal
+
 Data da aula: 22/08/2017
