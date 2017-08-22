@@ -12,12 +12,9 @@ Baixar repositório:
 
 	git clone https://github.com/leonardotdleal/Linguagem-C.git
 	
-Configurando username: 
+Configurando username e email:
 
 	git config --global user.name "Leonardo"
-	
-Configurando email: 
-
 	git config --global user.email email@example.com
 	
 Gravando alterações de todos os arquivos modificados: 
