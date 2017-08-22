@@ -4,7 +4,7 @@
 
 ## Comandos git para uso em sala ##
 
-* Baixar repositório: 
+Baixar repositório: 
 
 	git clone https://github.com/leonardotdleal/Linguagem-C.git
 	
@@ -19,7 +19,8 @@
 * Gravando alterações de todos os arquivos modificados: 
 
 	git add -A
-	
+
+
 * Armazena os arquivos alterados em um commit: 
 
 	git commit -m "message"
