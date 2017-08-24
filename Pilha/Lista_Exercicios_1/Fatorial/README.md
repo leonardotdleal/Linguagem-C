@@ -8,4 +8,5 @@ Exemplo:
 * 5! = [1! = 1] [2! = 2] [3! = 6] [4! = 24] [5! = 120]
 
 Autor: Leonardo Tadeu Diniz Leal
+
 Data da entrega: 13/09/2017

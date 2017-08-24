@@ -12,4 +12,5 @@ deve implementar três pilhas estáticas, cujos discos são representados por
 valores números. (2,5 pontos)
 
 Autor: Leonardo Tadeu Diniz Leal
+
 Data da entrega: 13/09/2017
