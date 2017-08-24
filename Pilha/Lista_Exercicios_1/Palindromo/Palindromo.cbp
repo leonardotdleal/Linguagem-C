@@ -35,6 +35,9 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="palindromo.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="pilha.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -25,3 +25,33 @@ void main() {
     liberaPilha(pilha);
 
 }
+
+/*
+
+int verificaExpressao(char *expressao){
+
+    int i = 0;
+    Pilha pilha;
+
+    inicializarPilha(&pilha,strlen(expressao));
+
+    for(i = 0; i <= strlen(expressao); i++){
+        if(expressao[i] == '(')
+            empilhar(&pilha,expressao[i]);
+
+        if(expressao[i] == ')') {
+            if(estaVazia(&pilha) == 1)
+                printf("\nFecha parenteses sem abre parenteses (posicao %d)", i);
+            else
+                desempilhar(&pilha);
+        }
+    }
+
+    if(estaVazia(&pilha) == 1)
+        return 1;
+    else
+        return 0;
+
+}
+
+*/
