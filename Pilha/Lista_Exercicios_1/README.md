@@ -1,7 +1,7 @@
-DISCIPLINA: EDA0001 – Estrutura de Dados
-SEMESTRE/ANO: 02/2017
-PROFESSOR: Allan Rodrigo Leite
-ALUNO: Leonardo Tadeu Diniz Leal
+### DISCIPLINA: ### EDA0001 – Estrutura de Dados
+### SEMESTRE/ANO: ### 02/2017
+### PROFESSOR: ### Allan Rodrigo Leite
+### ALUNO: ### Leonardo Tadeu Diniz Leal
 
 # Lista de Exercícios 1 – Pilhas #
 
@@ -16,12 +16,12 @@ Exemplo:
 
 Exibe veículos estacionados: MIX-7891 e MAD-1238
 
-## 2) Faça um algoritmo que simule a pilha de execução de funções recursivas, considerando uma função que calcule o fatorial de um dado número. A cada recursão (elemento da pilha), deve ser armazenado o resultado do fatorial até o momento. (1,0 ponto) ##
+### 2) Faça um algoritmo que simule a pilha de execução de funções recursivas, considerando uma função que calcule o fatorial de um dado número. A cada recursão (elemento da pilha), deve ser armazenado o resultado do fatorial até o momento. (1,0 ponto) ###
 
 Exemplo:
 * 5! = [1! = 1] [2! = 2] [3! = 6] [4! = 24] [5! = 120]
 
-3) Faça um programa utilizando pilhas dinâmicas que solicite ao usuário uma palavra ou string. Em seguida, o programa deve informar se a palavra ou string é um palíndromo. Devem ser desconsiderados os sinais ortográficos como espaços, letras maiúsculas, pontuação e acentos. (1,5 pontos)
+### 3) Faça um programa utilizando pilhas dinâmicas que solicite ao usuário uma palavra ou string. Em seguida, o programa deve informar se a palavra ou string é um palíndromo. Devem ser desconsiderados os sinais ortográficos como espaços, letras maiúsculas, pontuação e acentos. (1,5 pontos)
 
 Exemplo:
 * Arara – SIM
@@ -31,7 +31,7 @@ Exemplo:
 * A mãe te ama – SIM
 * A mãe te amou - NÃO
 
-4) Faça um programa utilizando pilhas dinâmicas que solicite uma expressão matemática em string. O programa deve indicar se os parênteses estão dispostos corretamente. A verificação dos parênteses deve considerar o sinal de igualdade. (2,0 pontos)
+### 4) Faça um programa utilizando pilhas dinâmicas que solicite uma expressão matemática em string. O programa deve indicar se os parênteses estão dispostos corretamente. A verificação dos parênteses deve considerar o sinal de igualdade. (2,0 pontos)
 
 Exemplo:
 * (a + b) * (a – b) – SIM
@@ -39,12 +39,7 @@ Exemplo:
 * a² = (b² + c²) – SIM
 * (x = y + z) - NÃO
 
-5) Faça um programa que controle os itens em estoque de um armazém,
-validando a quantidade de mercadorias empilháveis. Neste caso, cada pilha
-deve possuir um tamanho predefinido de acordo com cada tipo de mercadoria.
-Deve ser possível realizar operações de adição e remoção nas pilhas,
-considerando o limite predefinido. Ao final, o programa deve exibir um
-relatório descrevendo as mercadorias no armazém (2,0 pontos)
+### 5) Faça um programa que controle os itens em estoque de um armazém, validando a quantidade de mercadorias empilháveis. Neste caso, cada pilha deve possuir um tamanho predefinido de acordo com cada tipo de mercadoria. Deve ser possível realizar operações de adição e remoção nas pilhas, considerando o limite predefinido. Ao final, o programa deve exibir um relatório descrevendo as mercadorias no armazém (2,0 pontos) ###
 
 Exemplo:
 * Quantas pilhas de mercadorias há no armazém: 3
@@ -62,11 +57,4 @@ Exibir relatório:
 * 5 – cadeiras plásticas
 * 5 – caixas de detergente
 
-6) Faça um programa que resolva o problema da Torre de Hanói. Este quebracabeça
-consiste em uma base contendo três pinos, os quais são dispostos
-alguns discos empilhados, porém, em ordem crescente de diâmetro, de cima
-para baixo. O problema consiste em passar todos os discos do primeiro pino
-para o último, usando um dos pinos como auxiliar, de maneira que um disco
-maior nunca fique em cima de outro menor em hipótese alguma. O programa
-deve implementar três pilhas estáticas, cujos discos são representados por
-valores números. (2,5 pontos)
+### 6) Faça um programa que resolva o problema da Torre de Hanói. Este quebracabeça consiste em uma base contendo três pinos, os quais são dispostos alguns discos empilhados, porém, em ordem crescente de diâmetro, de cima para baixo. O problema consiste em passar todos os discos do primeiro pino para o último, usando um dos pinos como auxiliar, de maneira que um disco maior nunca fique em cima de outro menor em hipótese alguma. O programa deve implementar três pilhas estáticas, cujos discos são representados por valores números. (2,5 pontos) ###
