@@ -1,7 +1,7 @@
-### DISCIPLINA: ### EDA0001 – Estrutura de Dados
-### SEMESTRE/ANO: ### 02/2017
-### PROFESSOR: ### Allan Rodrigo Leite
-### ALUNO: ### Leonardo Tadeu Diniz Leal
+#### DISCIPLINA: EDA0001 – Estrutura de Dados
+#### SEMESTRE/ANO: 02/2017
+#### PROFESSOR: Allan Rodrigo Leite
+#### ALUNO: Leonardo Tadeu Diniz Leal
 
 # Lista de Exercícios 1 – Pilhas #
 
