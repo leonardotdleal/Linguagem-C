@@ -4,24 +4,11 @@
 
 void main() {
 
-    Pilha *pilha = criaPilha();
+    char *palavra;
 
-    empilha(pilha, 20.0);
-    empilha(pilha, 20.8);
-    empilha(pilha, 20.3);
-    empilha(pilha, 44.5);
-    empilha(pilha, 33.33);
-    empilha(pilha, 20.9);
+    printf("Escreva a palavra a verificar se eh palindrome: ");
+    scanf("%s",&palavra);
 
-    imprimePilha(pilha);
-
-    printf("\n\n");
-
-    desempilha(pilha);
-    desempilha(pilha);
-
-    imprimePilha(pilha);
-
-    liberaPilha(pilha);
+    verificaPalindrome(&palavra);
 
 }

@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1503541238 source:c:\users\talita\desktop\git\git\linguagem-c\pilha\lista_exercicios_1\palindromo\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1503541304 c:\users\talita\desktop\git\git\linguagem-c\pilha\lista_exercicios_1\palindromo\pilha.h
+	"boolean.h"
+
+1503541358 c:\users\talita\desktop\git\git\linguagem-c\pilha\lista_exercicios_1\palindromo\boolean.h
+
+1503539687 source:c:\users\talita\desktop\git\git\linguagem-c\pilha\lista_exercicios_1\palindromo\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
