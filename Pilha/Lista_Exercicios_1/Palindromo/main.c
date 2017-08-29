@@ -4,10 +4,10 @@
 
 void main() {
 
-    char *palavra;
+    char *palavra = malloc(sizeof(char));
 
     printf("Escreva a palavra a verificar se eh palindrome: ");
-    scanf("%s",&palavra);
+    gets(&palavra);
 
     verificaPalindrome(&palavra);
 
