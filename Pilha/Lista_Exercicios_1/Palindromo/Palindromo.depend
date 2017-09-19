@@ -14,17 +14,17 @@
 	<stdlib.h>
 	"pilha.h"
 
-1504048808 source:c:\workstation\c\git\linguagem-c\pilha\lista_exercicios_1\palindromo\main.c
+1505857859 source:c:\workstation\c\git\linguagem-c\pilha\lista_exercicios_1\palindromo\main.c
 	<stdio.h>
 	<stdlib.h>
 	"pilha.h"
 
-1504042686 c:\workstation\c\git\linguagem-c\pilha\lista_exercicios_1\palindromo\pilha.h
-	"boolean.h"
+1505146729 c:\workstation\c\git\linguagem-c\pilha\lista_exercicios_1\palindromo\pilha.h
+	<stdbool.h>
 
 1504042686 c:\workstation\c\git\linguagem-c\pilha\lista_exercicios_1\palindromo\boolean.h
 
-1504049600 source:c:\workstation\c\git\linguagem-c\pilha\lista_exercicios_1\palindromo\palindromo.c
+1505858465 source:c:\workstation\c\git\linguagem-c\pilha\lista_exercicios_1\palindromo\palindromo.c
 	<stdio.h>
 	<stdlib.h>
 	"pilha.h"
@@ -32,5 +32,10 @@
 1504042686 source:c:\workstation\c\git\linguagem-c\pilha\lista_exercicios_1\palindromo\pilha.c
 	<stdio.h>
 	<stdlib.h>
+	"pilha.h"
+
+1505146950 source:c:\workstation\c\git\linguagem-c\pilha\lista_exercicios_1\palindromo\test.c
+	<assert.h>
+	<stdbool.h>
 	"pilha.h"
 

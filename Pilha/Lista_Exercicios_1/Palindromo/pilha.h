@@ -1,4 +1,4 @@
-#include "boolean.h"
+#include <stdbool.h>
 /*
 typedef struct pilha {
    float valor;
@@ -21,3 +21,4 @@ float desempilha(Pilha *p);
 bool estaVazia(Pilha *p);
 void imprimePilha(Pilha *pilha);
 void liberaPilha(Pilha *pilha);
+char *inverteString(char *palavra);

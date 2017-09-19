@@ -11,9 +11,36 @@ char *removeEspacos(char *palavra) {
             palavraNova[j++] = palavra[i];
     }
 
-    //printf("funcao: %s", palavraNova);
+    printf("funcao: %s", palavraNova);
 
     return palavraNova;
+}
+
+void verif(char *palavra) {
+    int j = 0,
+        sizeString = strlen(palavra) - 1;
+    bool ehPalindrome = true;
+
+    for (int i = sizeString; i >= 0; i--) {
+        //printf("\n [%d]: %c", i, palavra[i]);
+        if (palavra[i] == ' ')
+            i--;
+        if (palavra[j] == ' ')
+            j++;
+
+        //printf("\n palavra[%d]: %c", i, palavra[i]);
+        //printf(" <> palavra[%d]: %c", j, palavra[j]);
+        if (palavra[i] != palavra[j]) {
+            ehPalindrome = false;
+            break;
+        }
+        j++;
+    }
+
+    if (ehPalindrome)
+        printf("Palavra eh palindrome!");
+    else
+        printf("Palavra nao eh palindrome!");
 }
 
 void verificaPalindrome(char *palavra) {
@@ -21,7 +48,7 @@ void verificaPalindrome(char *palavra) {
     Pilha *pilha = criaPilha();
     int i = 0;
     char *palavraInvertida = (char*) malloc((strlen(palavra) - 1)*sizeof(char));
-    char *palavraSemEspacos = malloc(sizeof(char));
+    char *palavraSemEspacos; //= malloc(sizeof(char));
 
     palavraSemEspacos = removeEspacos(palavra);
 
