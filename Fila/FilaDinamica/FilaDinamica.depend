@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1506559862 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\fila\filadinamica\fila.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
+1506558026 c:\users\udesc.cctcc\desktop\git\linguagem-c\fila\filadinamica\fila.h
+	"boolean.h"
+
+1506558011 c:\users\udesc.cctcc\desktop\git\linguagem-c\fila\filadinamica\boolean.h
+
+1506560556 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\fila\filadinamica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
