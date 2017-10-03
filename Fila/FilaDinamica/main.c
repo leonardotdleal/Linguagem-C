@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include "fila.h"
 
+void limpaTela() {
+    system("cls");
+}
+
 void main() {
 
     int opcao = 0;
@@ -47,9 +51,10 @@ void main() {
                 break;
             case 4:
                 if (estaVazia(fila))
-                    printf("\nFila esta vazia");
+                    mensagem = "Fila esta vazia";
                 else
-                    printf("\nFila nao esta vazia");
+                    mensagem = "Fila nao esta vazia";
+                limpaTela();
                 break;
             case 5:
                 imprimeFila(fila);
@@ -70,8 +75,4 @@ void main() {
 
     } while(opcao != 0);
 
-}
-
-void limpaTela() {
-    system("cls");
 }
