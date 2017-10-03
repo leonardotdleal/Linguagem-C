@@ -2,28 +2,9 @@
 #include <stdlib.h>
 #include "fila.h"
 
-void imprimeFila(Fila *Fila) {
-    float x = 0;
-    Fila *FilaAux = criaFila();
-
-    while (!estaVazia(Fila)) {
-        x = desemFila(Fila);
-        printf("\nFila [%d]: %.2f", Fila->topo, x);
-        emFila(FilaAux, x);
-    }
-
-    while (!estaVazia(FilaAux)) {
-        x = desemFila(FilaAux);
-        emFila(Fila, x);
-    }
-
-    free(FilaAux);
-}
-
-
 Fila *criaFila() {
     Fila *fila = malloc(sizeof(Fila));
-    fila->inicio = fila->fim = 0;
+    fila->inicio = fila->fim = -1;
     return fila;
 }
 
@@ -33,50 +14,53 @@ void inserir(Fila *fila, float valor) {
     else {
         if (estaCheia(fila) == 1) {
             printf("\nFila esta cheia! Nao eh possivel inserir");
-        } else
+        } else {
+            fila->fim = (fila->fim + 1) % MAX;
             fila->valores[fila->fim] = valor;
+
+            if (fila->inicio == -1)
+                fila->inicio = fila->fim;
+        }
     }
 }
 
 float retirar(Fila *fila) {
+    float valor = -1;
+
     if (fila == NULL)
         printf("\nFila nao iniciada!");
     else {
         if (estaVazia(fila) == 1)
             printf("\nFila esta vazia! Nao eh possivel retirar");
-        else
-            return fila->valores[--fila->topo];
+        else {
+            valor = fila->valores[fila->inicio];
+
+            if (fila->inicio == fila->fim)
+                fila->inicio = fila->fim = -1;
+            else
+                fila->inicio = (fila->inicio + 1) % MAX;
+        }
     }
 }
 
-bool estaCheia(Fila *fila) {
-    if (fila->inicio == fila->fim)
-        return true;
-    else
-        return false;
+int estaCheia(Fila *fila) {
+    return (fila->fim + 1) % MAX == fila->inicio;
 }
 
-bool estaVazia(Fila *fila) {
-    if (fila->inicio == fila->fim)
-        return true;
-    else
-        return false;
+int estaVazia(Fila *fila) {
+    return fila->inicio == -1 && fila->fim == -1;
 }
 
 void imprimeFila(Fila *fila) {
-    float x = 0;
-    Fila *filaAux = criaFila();
+    int i;
 
-    while (!estaVazia(fila)) {
-        x = retirar(fila);
-        printf("\nFila [%d]: %.2f", fila->topo, x);
-        inserir(filaAux, x);
-    }
-
-    while (!estaVazia(filaAux)) {
-        x = retirar(filaAux);
-        inserir(Fila, x);
-    }
-
-    free(FilaAux);
+    for (i = fila->inicio; i <= fila->fim; i++)
+        printf("%.2f\n", fila->valores[i]);
 }
+
+void limpaFila(Fila *fila) {
+    if (!estaVazia(fila))
+        free(fila);
+}
+
+

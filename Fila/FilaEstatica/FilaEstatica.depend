@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1507071769 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\fila\filaestatica\fila.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
+1507070692 c:\users\udesc.cctcc\desktop\git\linguagem-c\fila\filaestatica\fila.h
+
+1507069243 c:\users\udesc.cctcc\desktop\git\linguagem-c\fila\filaestatica\boolean.h
+
+1507071358 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\fila\filaestatica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
