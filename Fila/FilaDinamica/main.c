@@ -14,8 +14,8 @@ void main() {
         printf("2) Inserir elemento\n");
         printf("3) Remover elemento\n");
         printf("4) Verifica se esta vazia\n");
-        printf("5) Imprime fila\n");
-        printf("6) Esvazia fila\n");
+        printf("5) Imprimir fila\n");
+        printf("6) Esvaziar fila\n");
         printf("0) Sair\n\n");
 
         if (mensagem != NULL) {
@@ -41,7 +41,7 @@ void main() {
                 limpaTela();
                 break;
             case 3:
-                valor = remove(fila);
+                valor = retirar(fila);
                 mensagem = "Valor removido com sucesso.";
                 limpaTela();
                 break;
