@@ -3,9 +3,9 @@
 #include "fila.h"
 
 Fila *criaFila() {
-    Fila *f = malloc(sizeof(Fila));
-    f->inicio = f->fim = NULL;
-    return f;
+    Fila *fila = malloc(sizeof(Fila));
+    fila->inicio = fila->fim = NULL;
+    return fila;
 }
 
 void inserir(Fila *f, float valor) {
@@ -36,7 +36,20 @@ float retirar(Fila *f) {
     }
 }
 
-bool estaVazia(Fila *f) {
-    return (f->fim == NULL);
+bool estaVazia(Fila *fila) {
+    return (fila->inicio == NULL);
 }
-void imprimeFila(Fila *f);
+
+void imprimeFila(Fila *fila) {
+    No* atual;
+
+    if (!estaVazia(fila)) {
+        printf("\n\n===================================\n");
+
+        for (atual = fila->inicio; atual != NULL; atual = atual->proximo)
+            printf("%.2f\n",atual->valor);
+
+        printf("===================================\n");
+    } else
+        printf("\nFila vazia.");
+}
