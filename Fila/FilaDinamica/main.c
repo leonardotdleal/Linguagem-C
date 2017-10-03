@@ -53,6 +53,7 @@ void main() {
                 break;
             case 5:
                 imprimeFila(fila);
+                mensagem = NULL;
                 system("pause");
                 limpaTela();
                 break;

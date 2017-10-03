@@ -15,3 +15,4 @@ void inserir(Fila *f, float valor);
 float retirar(Fila *f);
 bool estaVazia(Fila *f);
 void imprimeFila(Fila *f);
+void liberaFila(Fila *f);

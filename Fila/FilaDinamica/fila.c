@@ -22,11 +22,15 @@ void inserir(Fila *f, float valor) {
 }
 
 float retirar(Fila *f) {
-    if (!estaVazia(f)) {
+    if (estaVazia(f)) {
+        printf("\nFila vazia.");
+        return 0;
+    } else {
         float valor = f->inicio->valor;
 
         No *no = f->inicio;
-        f->inicio = f->inicio->proximo;
+        f->inicio = no->proximo;
+
         free(no);
 
         if (f->inicio == NULL)
@@ -52,4 +56,17 @@ void imprimeFila(Fila *fila) {
         printf("===================================\n");
     } else
         printf("\nFila vazia.");
+}
+
+void liberaFila(Fila *f) {
+    // TODO implementar função
+    /*
+        No* atual = f->cabeca;
+        while (atual != NULL) {
+        No* proximo = atual->proximo;
+        free(atual);
+        atual = proximo;
+        }
+        free(f);
+    */
 }
