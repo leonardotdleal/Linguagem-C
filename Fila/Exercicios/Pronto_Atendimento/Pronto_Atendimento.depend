@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1507165279 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\fila\exercicios\pronto_atendimento\fila.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
+1507164987 c:\users\udesc.cctcc\desktop\git\linguagem-c\fila\exercicios\pronto_atendimento\fila.h
+
+1507165147 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\fila\exercicios\pronto_atendimento\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
