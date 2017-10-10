@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1507678659 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\deque\deque\main.c
+	<stdio.h>
+	<stdlib.h>
+	"deque.h"
+
+1507678643 c:\users\udesc.cctcc\desktop\git\linguagem-c\deque\deque\deque.h
+	"boolean.h"
+
+1507673897 c:\users\udesc.cctcc\desktop\git\linguagem-c\deque\deque\boolean.h
+

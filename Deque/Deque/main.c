@@ -10,16 +10,18 @@ void main() {
 
     int opcao = 0;
     float valor = 0;
-    Fila *fila;
+    Deque *deque;
     char *mensagem = NULL;
 
     do {
-        printf("1) Criar Fila\n");
-        printf("2) Inserir elemento\n");
-        printf("3) Remover elemento\n");
-        printf("4) Verifica se esta vazia\n");
-        printf("5) Imprimir fila\n");
-        printf("6) Esvaziar fila\n");
+        printf("1) Criar Deque\n");
+        printf("2) Inserir elemento no inicio\n");
+        printf("3) Inserir elemento no fim\n");
+        printf("4) Remover elemento no inicio\n");
+        printf("5) Remover elemento no fim\n");
+        printf("6) Verifica se esta vazia\n");
+        printf("7) Imprimir deque\n");
+        printf("8) Esvaziar deque\n");
         printf("0) Sair\n\n");
 
         if (mensagem != NULL) {
@@ -33,36 +35,48 @@ void main() {
 
         switch (opcao) {
             case 1:
-                fila = criaFila();
-                mensagem = "Fila criada com sucesso!";
+                deque = criaDeque();
+                mensagem = "Deque criado com sucesso!";
                 limpaTela();
                 break;
             case 2:
                 printf("\nDigite o valor: ");
                 scanf("%f", &valor);
-                inserir(fila, valor);
+                inserirNoInicio(deque, valor);
                 mensagem = "Valor inserido com sucesso!";
                 limpaTela();
                 break;
             case 3:
-                valor = retirar(fila);
-                mensagem = "Valor removido com sucesso.";
+                printf("\nDigite o valor: ");
+                scanf("%f", &valor);
+                inserirNoFim(deque, valor);
+                mensagem = "Valor inserido com sucesso!";
                 limpaTela();
                 break;
             case 4:
-                if (estaVazia(fila))
-                    mensagem = "Fila esta vazia";
-                else
-                    mensagem = "Fila nao esta vazia";
+                valor = retirarDoInicio(deque);
+                mensagem = "Valor removido com sucesso.";
                 limpaTela();
                 break;
             case 5:
-                imprimeFila(fila);
+                valor = retirarDoFim(deque);
+                mensagem = "Valor removido com sucesso.";
+                limpaTela();
+                break;
+            case 6:
+                if (estaVazio(deque))
+                    mensagem = "Deque esta vazio";
+                else
+                    mensagem = "Deque nao esta vazio";
+                limpaTela();
+                break;
+            case 7:
+                imprimeDeque(deque);
                 mensagem = NULL;
                 system("pause");
                 limpaTela();
                 break;
-            case 6:
+            case 8:
                 break;
             case 0:
                 printf("\nObrigado por utilizar o sistema.");
