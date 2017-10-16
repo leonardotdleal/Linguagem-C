@@ -9,3 +9,18 @@
 
 1507673897 c:\users\udesc.cctcc\desktop\git\linguagem-c\deque\deque\boolean.h
 
+1508168134 source:c:\workstation\c\git\linguagem-c\deque\deque\deque.c
+	<stdio.h>
+	<stdlib.h>
+	"deque.h"
+
+1508165172 c:\workstation\c\git\linguagem-c\deque\deque\deque.h
+	"boolean.h"
+
+1508161751 c:\workstation\c\git\linguagem-c\deque\deque\boolean.h
+
+1508164147 source:c:\workstation\c\git\linguagem-c\deque\deque\main.c
+	<stdio.h>
+	<stdlib.h>
+	"deque.h"
+

@@ -28,10 +28,12 @@ void inserirNoFim(Deque *d, float valor) {
     no->anterior = d->fim;
     no->proximo = NULL;
 
-    d->fim = no;
+    if (estaVazio(d))
+        d->inicio = no;
+    else
+        d->fim->proximo = no;
 
-    if (d->inicio == NULL)
-        d->inicio = d->fim;
+    d->fim = no;
 }
 
 float retirarDoInicio(Deque *d) {
@@ -40,9 +42,8 @@ float retirarDoInicio(Deque *d) {
         exit(-1);
     }
     float valor = d->inicio->valor;
-    No *no;
+    No *no = d->inicio;
 
-    no = d->inicio;
     d->inicio = no->proximo;
     free(no);
 
@@ -58,14 +59,20 @@ float retirarDoFim(Deque *d) {
         exit(-1);
     }
     float valor = d->fim->valor;
-    No *no;
-
-    no = d->fim->anterior;
+    No *no = d->fim;
+/*
     free(d->fim);
-    d->fim = no;
+    d->fim = no->anterior;
 
     if (d->fim == NULL)
         d->inicio = NULL;
+*/
+    if (d->inicio == d->fim)
+		d->inicio = d->fim = NULL;
+	else
+		d->fim = no->anterior;
+
+	free(no);
 
     return valor;
 }

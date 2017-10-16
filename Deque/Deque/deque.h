@@ -13,6 +13,8 @@ typedef struct deque {
 
 Deque *criaDeque();
 void inserirNoInicio(Deque *d, float valor);
+void inserirNoFim(Deque *d, float valor);
+float retirarDoInicio(Deque *d);
 float retirarDoFim(Deque *d);
 bool estaVazio(Deque *d);
 void imprimeDeque(Deque *d);

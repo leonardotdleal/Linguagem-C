@@ -10,6 +10,7 @@ Fila *criaFila() {
 
 void inserir(Fila *f, float valor) {
     No *no = malloc(sizeof(No));
+
     no->valor = valor;
     no->proximo = NULL;
 

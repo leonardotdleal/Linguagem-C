@@ -14,3 +14,18 @@
 	<stdlib.h>
 	"fila.h"
 
+1508161751 source:c:\workstation\c\git\linguagem-c\fila\filadinamica\fila.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
+1508161751 c:\workstation\c\git\linguagem-c\fila\filadinamica\fila.h
+	"boolean.h"
+
+1508161751 c:\workstation\c\git\linguagem-c\fila\filadinamica\boolean.h
+
+1508161751 source:c:\workstation\c\git\linguagem-c\fila\filadinamica\main.c
+	<stdio.h>
+	<stdlib.h>
+	"fila.h"
+
