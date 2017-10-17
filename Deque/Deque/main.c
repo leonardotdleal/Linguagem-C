@@ -13,6 +13,7 @@ void main() {
     Deque *deque;
     char *mensagem = NULL;
 
+
     do {
         printf("1) Criar Deque\n");
         printf("2) Inserir elemento no inicio\n");
@@ -88,5 +89,4 @@ void main() {
         }
 
     } while(opcao != 0);
-
 }

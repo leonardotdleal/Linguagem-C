@@ -15,6 +15,9 @@ void inserirNoInicio(Deque *d, float valor) {
     no->anterior = NULL;
     no->proximo = d->inicio;
 
+    if(d->inicio != NULL)
+        d->inicio->anterior = no;
+
     d->inicio = no;
 
     if (d->fim == NULL)
@@ -49,6 +52,8 @@ float retirarDoInicio(Deque *d) {
 
     if (d->inicio == NULL)
         d->fim = NULL;
+    else
+        d->inicio->anterior = NULL;
 
     return valor;
 }
@@ -60,19 +65,14 @@ float retirarDoFim(Deque *d) {
     }
     float valor = d->fim->valor;
     No *no = d->fim;
-/*
-    free(d->fim);
+
     d->fim = no->anterior;
+    free(no);
 
     if (d->fim == NULL)
         d->inicio = NULL;
-*/
-    if (d->inicio == d->fim)
-		d->inicio = d->fim = NULL;
-	else
-		d->fim = no->anterior;
-
-	free(no);
+    else
+        d->fim->proximo = NULL;
 
     return valor;
 }
@@ -87,8 +87,11 @@ void imprimeDeque(Deque *deque) {
     if (!estaVazio(deque)) {
         printf("\n\n===================================\n");
 
-        for (atual = deque->inicio; atual != NULL; atual = atual->proximo)
-            printf("%.2f\n",atual->valor);
+        int i = 0;
+        for (atual = deque->inicio; atual != NULL; atual = atual->proximo){
+            printf("%.2f %d\n",atual->valor,i);
+            i++;
+        }
 
         printf("===================================\n");
     } else
