@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1508280757 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\deque\deque\main.c
+1508282761 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\deque\deque\main.c
 	<stdio.h>
 	<stdlib.h>
 	"deque.h"
 
-1508279018 c:\users\udesc.cctcc\desktop\git\linguagem-c\deque\deque\deque.h
+1508282532 c:\users\udesc.cctcc\desktop\git\linguagem-c\deque\deque\deque.h
 	"boolean.h"
 
 1508279018 c:\users\udesc.cctcc\desktop\git\linguagem-c\deque\deque\boolean.h
@@ -24,7 +24,7 @@
 	<stdlib.h>
 	"deque.h"
 
-1508281074 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\deque\deque\deque.c
+1508283008 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\deque\deque\deque.c
 	<stdio.h>
 	<stdlib.h>
 	"deque.h"

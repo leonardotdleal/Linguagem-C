@@ -98,15 +98,43 @@ void imprimeDeque(Deque *deque) {
         printf("\nDeque vazia.");
 }
 
-void liberaDeque(Deque *f) {
-    // TODO implementar função
-    /*
-        No* atual = f->inicio;
-        while (atual != NULL) {
-        No* proximo = atual->proximo;
-        free(atual);
-        atual = proximo;
-        }
-        free(f);
-    */
+float percorreDoInicio(Deque *d) {
+    if(estaVazio(d)){
+		printf("Deque vazio!");
+		return ;
+	}
+	No *tmp = d->inicio;
+
+	while(tmp != NULL){
+		printf("\n%.2f", tmp->valor);
+		tmp = tmp->proximo;
+	}
+	printf("\n\n");
+}
+
+float percorreDoFim(Deque *d) {
+    if(estaVazio(d)){
+		printf("Deque vazio!");
+		return ;
+	}
+	No *tmp = d->fim;
+
+	while(tmp != NULL){
+		printf("\n%.2f", tmp->valor);
+		tmp = tmp->anterior;
+	}
+	printf("\n\n");
+}
+
+void liberaDeque(Deque *d) {
+    if(!estaVazio(d)){
+		No *proxNo, *atual;
+
+		atual = d->inicio;
+		while(atual != NULL){
+			proxNo = atual->proximo;
+			free(atual);
+			atual = proxNo;
+		}
+	}
 }

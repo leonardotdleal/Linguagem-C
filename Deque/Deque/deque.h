@@ -17,5 +17,6 @@ void inserirNoFim(Deque *d, float valor);
 float retirarDoInicio(Deque *d);
 float retirarDoFim(Deque *d);
 bool estaVazio(Deque *d);
-void imprimeDeque(Deque *d);
 void liberaDeque(Deque *d);
+float percorreDoInicio(Deque *d);
+float percorreDoFim(Deque *d);
