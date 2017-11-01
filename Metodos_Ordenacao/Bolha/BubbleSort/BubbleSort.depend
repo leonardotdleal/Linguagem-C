@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1509580027 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\metodos_ordenacao\bolha\bubblesort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
