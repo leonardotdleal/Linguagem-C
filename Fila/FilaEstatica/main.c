@@ -3,7 +3,6 @@
 #include "fila.h"
 
 void main() {
-    //printf("Hello world!\n");
 
     Fila *fila = criaFila();
 

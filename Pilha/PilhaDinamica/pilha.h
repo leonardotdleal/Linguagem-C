@@ -1,10 +1,4 @@
 #include "boolean.h"
-/*
-typedef struct pilha {
-   float valor;
-   struct Pilha *anterior;
-} Pilha;
-*/
 
 typedef struct no {
     float valor;

@@ -7,45 +7,40 @@ Pilha *criaPilha() {
     pilha->topo = 0;
     return pilha;
 }
-
-void empilha(Pilha *pilha, float valor) {
+/*
+void empilha(Pilha *pilha, char *carro) {
     if (pilha == NULL)
         printf("\nPilha nao iniciada!");
     else {
         if (estaCheia(pilha) == 1) {
             printf("\nPilha esta cheia! Nao eh possivel empilhar");
         } else
-            pilha->valores[pilha->topo++] = valor;
+            printf("\nPilha esta cheia! Nao eh possivel empilhar");
+            //strcpy(pilha->carros[pilha->topo++],carro);
     }
 }
 
-float desempilha(Pilha *pilha) {
+char desempilha(Pilha *pilha) {
     if (pilha == NULL)
         printf("\nPilha nao iniciada!");
     else {
         if (estaVazia(pilha) == 1)
             printf("\nPilha esta vazia! Nao eh possivel desempilhar");
         else
-            return pilha->valores[--pilha->topo];
+            return pilha->carros[--pilha->topo];
     }
 }
 
 bool estaCheia(Pilha *pilha) {
-    if (pilha->topo == MAX)
-        return true;
-    else
-        return false;
+    return (pilha->topo == MAX);
 }
 
 bool estaVazia(Pilha *pilha) {
-    if (pilha->topo == 0)
-        return true;
-    else
-        return false;
+    return (pilha->topo == 0);
 }
 
 void imprimePilha(Pilha *pilha) {
-    float x = 0;
+    char x = 0;
     Pilha *pilhaAux = criaPilha();
 
     while (!estaVazia(pilha)) {
@@ -61,3 +56,4 @@ void imprimePilha(Pilha *pilha) {
 
     free(pilhaAux);
 }
+*/

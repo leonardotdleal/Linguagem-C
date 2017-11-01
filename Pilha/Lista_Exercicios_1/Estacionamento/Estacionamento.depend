@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1509547571 source:c:\workstation\c\git\linguagem-c\pilha\lista_exercicios_1\estacionamento\main.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
+1509547700 c:\workstation\c\git\linguagem-c\pilha\lista_exercicios_1\estacionamento\pilha.h
+	"boolean.h"
+
+1509373561 c:\workstation\c\git\linguagem-c\pilha\lista_exercicios_1\estacionamento\boolean.h
+
+1509548358 source:c:\workstation\c\git\linguagem-c\pilha\lista_exercicios_1\estacionamento\pilha.c
+	<stdio.h>
+	<stdlib.h>
+	"pilha.h"
+
