@@ -5,38 +5,40 @@
 
 void main() {
 
-    int *vet = malloc(MAX * sizeof(int));
+    int *vet1 = malloc(MAX * sizeof(int));
+    int *vet2 = malloc(MAX * sizeof(int));
+    int *vet3 = malloc(MAX * sizeof(int));
     int returnBubbleSort = 0;
 
     // VETOR ORDENADO
-    createArraySorted(vet, MAX);
-    returnBubbleSort = bubbleSort(vet, MAX);
+    createArraySorted(vet1, MAX);
+    returnBubbleSort = bubbleSort(vet1, MAX);
     printf("\nVezes que passou: %d", returnBubbleSort);
 
     // VETOR DESORDENADO
-    createArrayUnsorted(vet, MAX);
-    returnBubbleSort = bubbleSort(vet, MAX);
+    createArrayUnsorted(vet2, MAX);
+    returnBubbleSort = bubbleSort(vet2, MAX);
     printf("\nVezes que passou: %d", returnBubbleSort);
 
     // VETOR MAIS OU MENOS
-    createArrayRandom(vet, MAX);
-    returnBubbleSort = bubbleSort(vet, MAX);
+    createArrayRandom(vet3, MAX);
+    returnBubbleSort = bubbleSort(vet3, MAX);
     printf("\nVezes que passou: %d", returnBubbleSort);
 
 }
 
-int bubbleSort(int *vet, int size) {
-    int i, j, aux, passed, numPassed = 0;
+int bubbleSort(int *vetor, int size) {
+    int i, aux, passed, numPassed = 0;
 
     do {
         passed = 0;
 
         for(i = 0; i < size - 1; i++) {
-            //printf("\nvet: %d", vet[i]);
-            if (vet[i] > vet[i + 1]) {
-                aux = vet[i];
-                vet[i] = vet[i + 1];
-                vet[i + 1] = aux;
+            //printf("\nvet: %d", vetor[i]);
+            if (vetor[i] > vetor[i + 1]) {
+                aux = vetor[i];
+                vetor[i] = vetor[i + 1];
+                vetor[i + 1] = aux;
                 passed = 1;
                 numPassed++;
             }
@@ -46,20 +48,20 @@ int bubbleSort(int *vet, int size) {
     return numPassed;
 }
 
-void createArraySorted(int *vet, int size) {
+void createArraySorted(int *vetor, int size) {
     int i;
     for (i = 0; i < size; i++)
-        vet[i] = i;
+        vetor[i] = i;
 }
 
-void createArrayUnsorted(int *vet, int size) {
+void createArrayUnsorted(int *vetor, int size) {
     int i;
     for (i = 0; i < size; i++)
-        vet[i] = size - i;
+        vetor[i] = size - i;
 }
 
-void createArrayRandom(int *vet, int size) {
+void createArrayRandom(int *vetor, int size) {
     int i;
     for (i = 0; i < size; i++)
-        vet[i] = rand();
+        vetor[i] = rand();
 }
