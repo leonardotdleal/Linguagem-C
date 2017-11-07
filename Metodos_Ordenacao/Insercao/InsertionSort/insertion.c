@@ -1,5 +1,5 @@
 
-void insertionSort(int *v, int size) {
+int insertionSort(int *v, int size) {
     int i, j, pivo, numPassed = 0;
 
     for (i = 1; i < size; i++) {
