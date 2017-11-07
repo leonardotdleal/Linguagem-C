@@ -1,31 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#define MAX 50
+#define MAX 10
 
 void main() {
 
     int *vet1 = malloc(MAX * sizeof(int));
     int *vet2 = malloc(MAX * sizeof(int));
     int *vet3 = malloc(MAX * sizeof(int));
-    int returnbubbleSort1 = 0;
+    int ret1 = 0, ret2 = 0, ret3 = 0;
 
-    printf("### BUBBLE SORT ###\n");
+    printf("### INSERTION SORT ###\n");
 
     // VETOR ORDENADO
     createArraySorted(vet1, MAX);
-    returnbubbleSort1 = bubbleSort1(vet1, MAX);
-    printf("\nVezes que passou: %d", returnbubbleSort1);
+    ret1 = insertionSort(vet1, MAX);
+    printf("\nVezes que passou: %d", ret1);
 
     // VETOR DESORDENADO
     createArrayUnsorted(vet2, MAX);
-    returnbubbleSort1 = bubbleSort1(vet2, MAX);
-    printf("\nVezes que passou: %d", returnbubbleSort1);
+    ret2 = insertionSort(vet2, MAX);
+    printf("\nVezes que passou: %d", ret2);
 
     // VETOR MAIS OU MENOS
     createArrayRandom(vet3, MAX);
-    returnbubbleSort1 = bubbleSort1(vet3, MAX);
-    printf("\nVezes que passou: %d", returnbubbleSort1);
+    ret3 = insertionSort(vet3, MAX);
+    printf("\nVezes que passou: %d", ret3);
 
 }
 
