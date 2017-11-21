@@ -13,6 +13,7 @@ typedef struct arvore {
 
 Arvore* criaArvore();
 int estaVazia(Arvore* arvore);
-No* adiciona(Arvore* arvore, No* pai, float valor);
+No* adiciona(Arvore* arvore, float valor);
 void remover(Arvore* arvore, No* no);
 void percorrer(No* no);
+No* localizaPai(Arvore* arvore, No* no);

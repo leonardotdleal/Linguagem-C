@@ -6,7 +6,13 @@ int main() {
 
     Arvore* arv = criaArvore();
 
-    adiciona(arv, NULL, 5);
+    adiciona(arv, 5);
+    adiciona(arv, 2);
+    adiciona(arv, 8);
+    adiciona(arv, 1);
+    adiciona(arv, 7);
+
+    percorrer(arv->raiz);
 
 
 }

@@ -14,13 +14,17 @@ int estaVazia(Arvore* arvore) {
     return (arvore->raiz == NULL);
 }
 
-No* adiciona(Arvore* arvore, No* pai, float valor) {
+No* adiciona(Arvore* arvore, float valor) {
     No *no = malloc(sizeof(No));
+    No *pai = malloc(sizeof(No));
 
-    no->pai = pai;
     no->esquerda = NULL;
     no->direita = NULL;
     no->valor = valor;
+
+    pai = localizaPai(arvore, no);
+
+    no->pai = pai;
 
     if (pai == NULL)
         arvore->raiz = no;
@@ -38,10 +42,13 @@ void remover(Arvore* arvore, No* no) {
     if (no->pai == NULL)
         arvore->raiz = NULL;
     else {
-        if (no->pai->esquerda == no)
-            no->pai->esquerda = NULL;
+        No* pai = no->pai;
+
+        pai->esquerda = no;
+        if (pai->esquerda ==  no)
+            pai->esquerda = NULL;
         else
-            no->pai->direita = NULL;
+            pai->direita = NULL;
     }
 
     free(no);
@@ -53,5 +60,17 @@ void percorrer(No* no) {
 
         percorrer(no->esquerda);
         percorrer(no->direita);
+    }
+}
+
+No* localizaPai(Arvore* arvore, No* no) {
+    if (no != NULL) {
+        if (no->valor <= arvore->raiz->valor)
+            localizaPai(arvore, no->esquerda);
+        else
+            localizaPai(arvore, no->direita);
+
+        printf("%f ", no->valor);
+        return no;
     }
 }
