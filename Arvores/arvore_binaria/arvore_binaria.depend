@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1511302096 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\arvores\arvore_binaria\arvore.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1511302122 c:\users\udesc.cctcc\desktop\git\linguagem-c\arvores\arvore_binaria\arvore.h
+
+1511302129 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\arvores\arvore_binaria\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+

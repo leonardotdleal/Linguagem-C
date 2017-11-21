@@ -1,17 +1,18 @@
 // #include "boolean.h"
 
 typedef struct {
-    struct No* anterior; //ponteiro para o nó anterior da lista
-    struct No* proximo; //ponteiro para o próximo nó da lista
-    void *v; //conteúdo de um nó arbitrário da lista
-} Arvore;
+    struct No* pai;
+    struct No* direita;
+    struct No* esquerda;
+    float valor;
+} No;
 
 typedef struct arvore {
-    No* cabeca; //inicio da lista
-    No* cauda; //fim da lista
-    int tamanho; //tamanho do conteúdo em bytes
+    No* raiz;
 } Arvore;
 
-void adicionaInicio(Lista *l, void *v);
-void adicionaFim(Lista *l, void *v);
-void percorre(Lista *l, void (callback)(void*);
+Arvore* criaArvore();
+int estaVazia(Arvore* arvore);
+No* adiciona(Arvore* arvore, No* pai, float valor);
+void remover(Arvore* arvore, No* no);
+void percorrer(No* no);

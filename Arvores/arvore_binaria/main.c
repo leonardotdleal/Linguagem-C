@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "arvore.h"
 
-int main()
-{
-    printf("Hello world!\n");
-    return 0;
+int main() {
+
+    Arvore* arv = criaArvore();
+
+    adiciona(arv, NULL, 5);
+
+
 }
