@@ -21,13 +21,17 @@ No* adiciona(Arvore* arvore, float valor) {
     no->esquerda = NULL;
     no->direita = NULL;
     no->valor = valor;
+    no->pai = NULL;
 
-    pai = localizaPai(arvore, no);
-
-    no->pai = pai;
-
-    if (pai == NULL)
+    if (estaVazia(arvore))
         arvore->raiz = no;
+    else {
+        pai = localizaPai(arvore, no);
+        no->pai = pai;
+    }
+
+    //if (pai == NULL)
+        //arvore->raiz = no;
 
     return no;
 }
@@ -56,7 +60,7 @@ void remover(Arvore* arvore, No* no) {
 
 void percorrer(No* no) {
     if (no != NULL) {
-        printf("%f ", no->valor);
+        printf("%.2f ", no->valor);
 
         percorrer(no->esquerda);
         percorrer(no->direita);
@@ -64,13 +68,20 @@ void percorrer(No* no) {
 }
 
 No* localizaPai(Arvore* arvore, No* no) {
-    if (no != NULL) {
-        if (no->valor <= arvore->raiz->valor)
-            localizaPai(arvore, no->esquerda);
-        else
-            localizaPai(arvore, no->direita);
+    if (estaVazia(arvore))
+        return NULL;
 
-        printf("%f ", no->valor);
+    if (no != NULL) {
+        if (no->valor <= arvore->raiz->valor) {
+            printf("\nESQ");
+            localizaPai(arvore, no->esquerda);
+        }
+        else {
+            printf("\nESQ");
+            localizaPai(arvore, no->direita);
+        }
+
+        printf("%.2f ", no->valor);
         return no;
     }
 }
