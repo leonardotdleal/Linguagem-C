@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1511389274 source:c:\workstation\c\git\linguagem-c\metodos_ordenacao\quicksort\quicksort\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1511388891 source:c:\workstation\c\git\linguagem-c\metodos_ordenacao\quicksort\quicksort\quicksort.c
+
