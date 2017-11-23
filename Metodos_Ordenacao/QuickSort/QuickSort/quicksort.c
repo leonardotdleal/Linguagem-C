@@ -10,9 +10,9 @@ void quickSort(int *vetor, int esq, int dir) {
 
 int dividir(int *vetor, int esq, int dir) {
     int pivo = vetor[dir];
-    int i = (esq - 1);
+    int i = (esq - 1), j;
 
-    for (int j = esq; j <= dir- 1; j++) {
+    for (j = esq; j <= dir - 1; j++) {
         if (vetor[j] <= pivo) {
             i++;
             troca(&vetor[i], &vetor[j]);
