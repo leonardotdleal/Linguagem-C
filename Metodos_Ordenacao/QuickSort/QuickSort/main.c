@@ -35,6 +35,10 @@ void main() {
     printArray(vet3);
     //printf("\nVezes que passou: %d\n", returnQuickSort3);
 
+    free(vet1);
+    free(vet2);
+    free(vet3);
+
 }
 
 void createArraySorted(int *vetor, int size) {
