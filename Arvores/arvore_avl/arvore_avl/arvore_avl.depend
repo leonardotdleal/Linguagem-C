@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1511999938 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\arvores\arvore_avl\arvore_avl\arvore.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1511999968 c:\users\udesc.cctcc\desktop\git\linguagem-c\arvores\arvore_avl\arvore_avl\arvore.h
+
+1511997127 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\arvores\arvore_avl\arvore_avl\avl.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+
+1512000045 source:c:\users\udesc.cctcc\desktop\git\linguagem-c\arvores\arvore_avl\arvore_avl\main.c
+	<stdio.h>
+	<stdlib.h>
+	"arvore.h"
+

@@ -14,7 +14,7 @@ int estaVazia(Arvore* arvore) {
     return (arvore->raiz == NULL);
 }
 
-No* adiciona(Arvore* arvore, float valor) {
+void adiciona(Arvore* arvore, float valor) {
     No *no = malloc(sizeof(No));
     No *pai = malloc(sizeof(No));
 
@@ -26,14 +26,17 @@ No* adiciona(Arvore* arvore, float valor) {
     if (estaVazia(arvore))
         arvore->raiz = no;
     else {
-        pai = localizaPai(arvore, no);
+        pai = localizaPai(arvore->raiz, valor);
         no->pai = pai;
+
+        if (valor <= pai->valor) {
+            pai->esquerda = no;
+        } else {
+            pai->direita = no;
+        }
     }
 
-    //if (pai == NULL)
-        //arvore->raiz = no;
-
-    return no;
+    //return no;
 }
 
 void remover(Arvore* arvore, No* no) {
@@ -58,6 +61,24 @@ void remover(Arvore* arvore, No* no) {
     free(no);
 }
 
+No* localizaPai(No* no, float valor) {
+    if (no == NULL) {
+        return NULL;
+    } else {
+        No *filho = NULL;
+
+        if (valor <= no->valor)
+            filho = no->esquerda;
+        else
+            filho = no->direita;
+
+        if (filho != NULL)
+            return localizaPai(filho, valor);
+        else
+            return no;
+    }
+}
+
 void percorrer(No* no) {
     if (no != NULL) {
         printf("%.2f ", no->valor);
@@ -67,22 +88,31 @@ void percorrer(No* no) {
     }
 }
 
-No* localizaPai(Arvore* arvore, No* no) {
-    if (estaVazia(arvore))
-        return NULL;
-
+// Raiz, esquerda, direita
+void preOrder(No* no) {
     if (no != NULL) {
-        if (no->valor <= arvore->raiz->valor) {
-            printf("\nESQ");
-            localizaPai(arvore, no->esquerda);
-        }
-        else {
-            printf("\nESQ");
-            localizaPai(arvore, no->direita);
-        }
-
         printf("%.2f ", no->valor);
-        return no;
+
+        preOrder(no->esquerda);
+        preOrder(no->direita);
+    }
+}
+
+// Esquerda, raiz e direita
+void inOrder(No* no) {
+    if (no != NULL) {
+        inOrder(no->esquerda);
+        printf("%.2f ", no->valor);
+        inOrder(no->direita);
+    }
+}
+
+//Esquerda, direita e raiz
+void posOrder(No* no) {
+    if (no != NULL) {
+        posOrder(no->esquerda);
+        posOrder(no->direita);
+        printf("%.2f ", no->valor);
     }
 }
 
