@@ -46,7 +46,7 @@ void adicionaVerificandoFB(Arvore* arvore, float valor) {
         if (fbPai > 0) { // Esquerda
             fbFilho = fb(noProblematico->esquerda);
 
-            printf("\nfbPai: %d", fbPai);
+            printf("\nfbPai: %d | no: %f", fbPai, noProblematico->valor);
             printf("\nfbFilho: %d", fbFilho);
 
             if (fbFilho > 0) {
@@ -57,7 +57,7 @@ void adicionaVerificandoFB(Arvore* arvore, float valor) {
         } else { // Direita
             fbFilho = fb(noProblematico->direita);
 
-            printf("\nfbPai: %d", fbPai);
+            printf("\nfbPai: %d | no: %f", fbPai, noProblematico->valor);
             printf("\nfbFilho: %d", fbFilho);
 
             if (fbFilho < 0) {

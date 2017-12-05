@@ -29,6 +29,8 @@ int altura(No* no) {
 
 /* RSE – Rotação Simples a Esquerda */
 No* rse(No* no) {
+    printf("\nRSE: %f", no->valor);
+
     No* pai = no->pai;
     No* direita = no->direita;
 
@@ -43,6 +45,8 @@ No* rse(No* no) {
 
 /* RSD – Rotação Simples a Direita */
 No* rsd(No* no) {
+    printf("\nRSD: %f", no->valor);
+
     No* pai = no->pai;
     No* esquerda = no->esquerda;
 
