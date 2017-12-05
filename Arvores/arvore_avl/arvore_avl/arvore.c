@@ -14,7 +14,7 @@ int estaVazia(Arvore* arvore) {
     return (arvore->raiz == NULL);
 }
 
-void adiciona(Arvore* arvore, float valor) {
+void adicionaVerificandoFB(Arvore* arvore, float valor) {
     No *no = malloc(sizeof(No));
     No *pai = malloc(sizeof(No));
 
@@ -36,7 +36,83 @@ void adiciona(Arvore* arvore, float valor) {
         }
     }
 
-    //return no;
+    No* noProblematico = verificaFB(no);
+
+    if (noProblematico != NULL) {
+
+        int fbPai = fb(noProblematico);
+        int fbFilho;
+
+        if (fbPai > 0) { // Esquerda
+            fbFilho = fb(noProblematico->esquerda);
+
+            printf("\nfbPai: %d", fbPai);
+            printf("\nfbFilho: %d", fbFilho);
+
+            if (fbFilho > 0) {
+                rsd(noProblematico);
+            } else {
+                rdd(noProblematico);
+            }
+        } else { // Direita
+            fbFilho = fb(noProblematico->direita);
+
+            printf("\nfbPai: %d", fbPai);
+            printf("\nfbFilho: %d", fbFilho);
+
+            if (fbFilho < 0) {
+                rse(noProblematico);
+            } else {
+                rde(noProblematico);
+            }
+        }
+
+        atualizaRaiz(arvore, noProblematico);
+    }
+}
+
+void atualizaRaiz(Arvore* arvore, No* no) {
+    if (no->pai == NULL)
+        arvore->raiz = no;
+    else
+        atualizaRaiz(arvore, no->pai);
+}
+
+void adiciona(Arvore* arvore, float valor) {
+    No *no = malloc(sizeof(No));
+    No *pai = malloc(sizeof(No));
+
+    no->esquerda = NULL;
+    no->direita = NULL;
+    no->valor = valor;
+    no->pai = NULL;
+
+    if (estaVazia(arvore))
+        arvore->raiz = no;
+    else {
+        pai = localizaPai(arvore->raiz, valor);
+        no->pai = pai;
+
+        if (valor <= pai->valor) {
+            pai->esquerda = no;
+        } else {
+            pai->direita = no;
+        }
+    }
+}
+
+No* verificaFB(No* no) {
+    if (no != NULL) {
+        int ret = fb(no);
+
+        if ((ret != 1) && (ret != 0) && (ret != -1)) {
+            return no;
+        } else {
+            return verificaFB(no->pai);
+        }
+    } else {
+        return NULL;
+    }
 }
 
 void remover(Arvore* arvore, No* no) {
