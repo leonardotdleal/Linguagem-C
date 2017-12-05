@@ -15,7 +15,7 @@ int fb(No* no) {
     return (esquerda - direita);
 }
 
-int altura(No* no){
+int altura(No* no) {
     int esquerda = 0, direita = 0;
 
     if (no->esquerda != NULL)

@@ -10,8 +10,8 @@ void main() {
     adicionaVerificandoFB(arv, 49);
     adicionaVerificandoFB(arv, 10);
     adicionaVerificandoFB(arv, 8);
-    adicionaVerificandoFB(arv, 67);
-    /*adicionaVerificandoFB(arv, 59);
+    /*adicionaVerificandoFB(arv, 67);
+    adicionaVerificandoFB(arv, 59);
     adicionaVerificandoFB(arv, 9);
     adicionaVerificandoFB(arv, 13);*/
 /*
