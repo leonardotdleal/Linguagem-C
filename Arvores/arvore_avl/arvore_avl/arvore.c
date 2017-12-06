@@ -23,9 +23,9 @@ void adicionaVerificandoFB(Arvore* arvore, float valor) {
     no->valor = valor;
     no->pai = NULL;
 
-    if (estaVazia(arvore))
+    if (estaVazia(arvore)){
         arvore->raiz = no;
-    else {
+    } else {
         pai = localizaPai(arvore->raiz, valor);
         no->pai = pai;
 
@@ -39,35 +39,28 @@ void adicionaVerificandoFB(Arvore* arvore, float valor) {
     No* noProblematico = verificaFB(no);
 
     if (noProblematico != NULL) {
-
         int fbPai = fb(noProblematico);
         int fbFilho;
 
         if (fbPai > 0) { // Esquerda
             fbFilho = fb(noProblematico->esquerda);
 
-            printf("\nfbPai: %d | no: %f", fbPai, noProblematico->valor);
-            printf("\nfbFilho: %d", fbFilho);
-
             if (fbFilho > 0) {
-                rsd(noProblematico);
+                rsd(arvore, noProblematico);
             } else {
-                rdd(noProblematico);
+                rdd(arvore, noProblematico);
             }
         } else { // Direita
             fbFilho = fb(noProblematico->direita);
 
-            printf("\nfbPai: %d | no: %f", fbPai, noProblematico->valor);
-            printf("\nfbFilho: %d", fbFilho);
-
             if (fbFilho < 0) {
-                rse(noProblematico);
+                rse(arvore, noProblematico);
             } else {
-                rde(noProblematico);
+                rde(arvore, noProblematico);
             }
         }
 
-        atualizaRaiz(arvore, noProblematico);
+        //atualizaRaiz(arvore, noProblematico);
     }
 }
 

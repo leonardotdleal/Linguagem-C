@@ -10,10 +10,10 @@ void main() {
     adicionaVerificandoFB(arv, 49);
     adicionaVerificandoFB(arv, 10);
     adicionaVerificandoFB(arv, 8);
-    /*adicionaVerificandoFB(arv, 67);
+    adicionaVerificandoFB(arv, 67);
     adicionaVerificandoFB(arv, 59);
     adicionaVerificandoFB(arv, 9);
-    adicionaVerificandoFB(arv, 13);*/
+    adicionaVerificandoFB(arv, 13);
 /*
     printf("\n\nPercorrer\n");
     percorrer(arv->raiz);
@@ -29,5 +29,4 @@ void main() {
     printf("\n\nPosOrder");
     printf("\nEsquerda, direita e raiz\n");
     posOrder(arv->raiz);
-
 }

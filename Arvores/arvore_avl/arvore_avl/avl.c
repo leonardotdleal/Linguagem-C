@@ -28,7 +28,7 @@ int altura(No* no) {
 }
 
 /* RSE – Rotação Simples a Esquerda */
-No* rse(No* no) {
+No* rse(Arvore *arv, No* no) {
     printf("\nRSE: %f", no->valor);
 
     No* pai = no->pai;
@@ -40,11 +40,19 @@ No* rse(No* no) {
     direita->esquerda = no;
     direita->pai = pai;
 
+    if(direita->pai == NULL)
+        arv->raiz = direita;
+    else
+        if(pai->direita == no)
+			pai->direita = direita;
+		else
+			pai->esquerda = direita;
+
     return direita;
 }
 
 /* RSD – Rotação Simples a Direita */
-No* rsd(No* no) {
+No* rsd(Arvore *arv, No* no) {
     printf("\nRSD: %f", no->valor);
 
     No* pai = no->pai;
@@ -56,17 +64,25 @@ No* rsd(No* no) {
     esquerda->direita = no;
     esquerda->pai = pai;
 
+    if(esquerda->pai == NULL)
+        arv->raiz = esquerda;
+    else
+       	if(pai->direita == no)
+			pai->direita = esquerda;
+		else
+			pai->esquerda = esquerda;
+
     return esquerda;
 }
 
 /* RDE – Rotação Dupla a Esquerda */
-No* rde(No* no) {
-    no->direita = rsd(no->direita);
-    return rse(no);
+No* rde(Arvore *arv, No* no) {
+    no->direita = rsd(arv, no->direita);
+    return rse(arv, no);
 }
 
 /* RDD – Rotação Dupla a Direita */
-No* rdd(No* no) {
-    no->esquerda = rse(no->esquerda);
-    return rsd(no);
+No* rdd(Arvore *arv, No* no) {
+    no->esquerda = rse(arv, no->esquerda);
+    return rsd(arv, no);
 }
