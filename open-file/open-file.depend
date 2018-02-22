@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1519261110 source:/home/udesc/Área de Trabalho/open-file/main.c
+	<stdio.h>
+	<stdlib.h>
+
