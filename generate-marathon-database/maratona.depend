@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1520983803 source:/home/udesc/Downloads/maratona/maratona/lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1520983814 /home/udesc/Downloads/maratona/maratona/lista.h
+
+1520984200 source:/home/udesc/Downloads/maratona/maratona/maratona.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"lista.h"
+
+1521588607 source:/home/udesc/Área de Trabalho/git/generate-marathon-database/lista.c
+	<stdio.h>
+	<stdlib.h>
+	"lista.h"
+
+1521588612 /home/udesc/Área de Trabalho/git/generate-marathon-database/lista.h
+
+1521588967 source:/home/udesc/Área de Trabalho/git/generate-marathon-database/maratona.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"lista.h"
+
+1521586722 source:/home/udesc/Área de Trabalho/git/generate-marathon-database/menu.c
+
+1521589587 source:/home/udesc/Área de Trabalho/git/generate-marathon-database/create.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"lista.h"
+
