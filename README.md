@@ -5,28 +5,3 @@ Programas desenvolvidos na linguagem C para estudos e exercícios nas disciplina
 Autor: Leonardo Tadeu Diniz Leal
 
 IDE utilizada para desenvolvimento: [CodeBlocks](http://www.codeblocks.org/)
-
-### Comandos git para uso em sala ###
-
-Baixar repositório: 
-
-	git clone https://github.com/leonardotdleal/Linguagem-C.git
-	
-Configurando username e email:
-
-	git config --global user.name "Leonardo"
-	git config --global user.email email@example.com
-	
-Gravando alterações de todos os arquivos modificados: 
-
-	git add -A
-
-
-Armazena os arquivos alterados em um commit: 
-
-	git commit -m "message"
-	
-Empurrando o commit para a branch master: 
-
-	git push origin master
-
